@@ -1,0 +1,20 @@
+{
+    "extends": "config/nextjs.json",
+    "compilerOptions": {
+        "plugins": [{ "name": "next" }],
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./*"],
+            "contentlayer/generated": ["./.contentlayer/generated"]
+        },
+        "preserveSymlinks": false
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        ".next/types/**/*.ts",
+        ".contentlayer/generated"
+    ],
+    "exclude": ["node_modules"]
+}
